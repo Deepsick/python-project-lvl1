@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "hexlet_code"
+version = "0.1.0"
+description = "The set of small math games"
+authors = ["Deepsick <mav96@bk.ru>"]
+packages = [
+  { include = "brain_games" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+prompt = "^0.4.1"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.8.4"
+
+[tool.poetry.scripts]
+brain-games = "brain_games.scripts.brain_games:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
